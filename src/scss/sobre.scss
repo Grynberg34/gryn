@@ -1,0 +1,117 @@
+@import '../scss/colors.scss';
+@import '../scss/font.scss';
+
+#sobre {
+    background-color: $verde-claro;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.sobre {
+    margin-top: 5vw;
+
+    .sobre__title {
+        font-size: 20px;
+        font-weight: 800;
+        color: $verde-medio;
+        margin-bottom: 1vw;
+    }
+    
+    .sobre__header {
+        margin-bottom: 2vw;
+        padding: 1vw;
+        background-color: $laranja-claro;
+
+        .sobre__header__title {
+            font-size: 20px;
+            font-weight: 800;
+            color: $verde-medio;
+            margin-bottom: 1vw;
+        }
+
+        .sobre__header__text {
+            font-size: 16px;
+            color: $branco;
+            font-weight: 500;
+        }
+
+
+    }
+
+    .sobre__content {
+        background-color: $verde-medio;
+        padding: 1vw;
+        margin-bottom: 2vw;
+
+        .sobre__content__title {
+            font-size: 20px;
+            font-weight: 800;
+            color: $laranja-claro;
+            margin-bottom: 1vw;
+        }
+
+        .sobre__content__text {
+            font-size: 16px;
+            font-weight: 500;
+            color: $verde-claro;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+    #sobre {
+        height: unset;
+        overflow: hidden;
+    }
+
+    .sobre {
+        padding-left: 10vw;
+        padding-right: 10vw;
+        margin-top: 20vw;
+        margin-bottom: 20vw;
+
+        .sobre__header {
+            margin-bottom: 6vw;
+            padding: 4vw;
+    
+            .sobre__header__title {
+                font-size: 20px;
+                font-weight: 800;
+                color: $verde-medio;
+                margin-bottom: 4vw;
+            }
+    
+            .sobre__header__text {
+                font-size: 16px;
+                color: $branco;
+                font-weight: 500;
+            }
+    
+    
+        }
+    
+        .sobre__content {
+            background-color: $verde-medio;
+            padding: 4vw;
+            margin-bottom: 6vw;
+    
+            .sobre__content__title {
+                font-size: 20px;
+                font-weight: 800;
+                color: $laranja-claro;
+                margin-bottom: 4vw;
+            }
+    
+            .sobre__content__text {
+                font-size: 16px;
+                font-weight: 500;
+                color: $verde-claro;
+                margin-bottom: 4vw;
+            }
+        }
+
+    }
+}

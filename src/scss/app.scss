@@ -1,0 +1,30 @@
+@import '../scss/colors.scss';
+@import '../scss/font.scss';
+@import '../scss/animations.scss';
+
+#home {
+    background-color: $verde-claro;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.home {
+    margin-top: 5vw;
+}
+
+@media only screen and (max-width: 767px) {
+
+    #home {
+        height: 100vh;
+        padding-bottom: 30vw;
+    }
+
+
+    .home {
+        padding-left: 5vw;
+        padding-right: 5vw;
+        margin-top: 20vw;
+    }
+
+}

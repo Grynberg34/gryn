@@ -1,0 +1,84 @@
+@import '../scss/colors.scss';
+@import '../scss/font.scss';
+
+#stack {
+    background-color: $verde-claro;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.stack {
+    margin-top: 5vw;
+    margin-bottom: 10vw;
+
+    .stack__text {
+        font-size: 16px;
+        color: $verde-medio;
+        font-weight: 600;
+        margin-bottom: 1vw;
+    }
+
+    .stack__title {
+        font-size: 20px;
+        font-weight: 600;
+        color: $laranja-medio;
+        margin-bottom: 2vw;
+        text-align: center;
+        margin-top: 2vw;
+    }
+
+    .stack__img {
+        display: block;
+        width: 50%;
+        margin-bottom: 0.5vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .stack__name {
+        font-size: 14px;
+        color: $verde-medio;
+        margin-bottom: 2vw;
+        text-align: center;
+    }
+}
+
+.container-fluid {
+    padding: 0 !important;
+}
+
+@media only screen and (max-width: 767px) {
+
+    #stack {
+        height: unset;
+        overflow: hidden;
+    }
+
+    .stack {
+        padding-left: 10vw;
+        padding-right: 10vw;
+        margin-bottom: 20vw;
+        margin-top: 20vw;
+
+        .stack__text {
+            margin-bottom: 6vw;
+        }
+
+        .stack__title {
+            font-size: 30px;
+            margin-bottom: 14vw;
+            margin-top: 20vw;
+        }
+
+        .stack__img {
+            width: 30%;
+        }
+
+        .stack__name {
+            font-size: 20px;
+            margin-bottom: 10vw;
+        }
+    }
+
+}

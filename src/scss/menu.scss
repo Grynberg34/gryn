@@ -1,0 +1,63 @@
+@import '../scss/colors.scss';
+@import '../scss/font.scss';
+
+.menu {
+    padding-left: 4vw;
+
+    .menu__logo {
+        margin-top: 4vw;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2vw;
+    }
+
+    .menu__list {
+
+        .menu__list__item {
+            display: block;
+            color: $verde-medio;
+            margin-bottom: 1.5vw;
+            font-size: 20px;
+            font-weight: 700;
+            text-decoration: none;
+        
+            &:hover {
+                color: $laranja-medio;
+            }
+        }
+
+        .menu__active {
+            color: $laranja-medio;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .menu {
+        margin-top: 20vw;
+        padding-left: 15vw;
+        padding-right: 15vw;
+
+        .menu__logo {
+            display: block;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 10vw;
+        }
+
+        .menu__list {
+            display: flex;
+            justify-content: space-between;
+
+            .menu__list__item {
+                display: inline;
+                text-align: center;
+                margin-bottom: 4vw;
+            }
+        }
+    }
+
+}

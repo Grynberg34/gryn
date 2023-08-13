@@ -1,0 +1,101 @@
+@import '../scss/colors.scss';
+@import '../scss/font.scss';
+
+.carousel {
+
+    .carousel__item {
+        position: relative;
+
+        .carousel__item__title {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: $laranja-medio;
+            padding: 0.5vw;
+            font-size: 20px;
+            color: $verde-claro;
+            font-weight: 700;
+        }
+
+        .carousel__item__subtitle {
+            color: $laranja-medio;
+            font-weight: 400;
+            margin-left: 1vw;
+        }
+
+        .carousel__item__link {
+            width: fit-content;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: $verde-medio;
+            color: $verde-claro;
+            padding: 0.5vw;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            z-index: 99;
+
+
+            &:hover {
+                background-color: $laranja-medio;
+            }
+        }
+
+        .carousel__item__img {
+            position: relative;
+            width: 100%;
+        }
+
+    }
+
+    .carousel__caption {
+        margin-top: 1vw;
+
+        .carousel__caption__item {
+            font-size: 16px;
+            font-weight: 400;
+            color: $verde-medio;
+            margin-bottom: 1vw;
+        }
+
+    }
+}
+
+.carousel-control-prev, .carousel-control-next {
+    color: $laranja-medio !important;
+}
+
+a {
+    position: relative;
+}
+
+@media only screen and (max-width: 767px) {
+
+    .carousel {
+        .carousel__item {
+            .carousel__item__title {
+                font-size: 16px;
+                padding: 2vw;
+            }
+
+            .carousel__item__link {
+                display: block;
+                margin-left: 0;
+                font-size: 14px;
+                padding: 2vw;
+            }
+        }
+
+        .carousel__caption {
+            padding-top: 2vw;
+
+            .carousel__caption__item {
+                font-size: 14px;
+                line-height: 2;
+            }
+        }
+
+    }
+
+}
