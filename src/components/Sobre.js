@@ -20,7 +20,7 @@ function Sobre() {
                             <div className="sobre__header">
                                 <h1 className="sobre__header__title">Sobre</h1>
                                 <p className='sobre__header__text'>
-                                    A gryn é uma empresa com sede em Belo Horizonte que atua desde 2020 na área de Desenvolvimento Web, atendendo clientes de diversas regiões do país.
+                                    A gryn (CNPJ 51.795.860/0001-08) é uma empresa com sede em Belo Horizonte que atua desde 2020 na área de Desenvolvimento Web, atendendo clientes de diversas regiões do país.
                                 </p>
                                 <p className='sobre__header__text'>
                                     Trabalhamos com as tecnologias mais estabelecidas no mercado de Desenvolvimento Web, buscando trazer para nossos clientes o resultado esperado de forma eficiente e confiável.
